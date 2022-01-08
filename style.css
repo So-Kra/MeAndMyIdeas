@@ -1,0 +1,86 @@
+/* ----------------------------------------------------------------------------------------------------------------------*/
+/* Text & Font */
+.container, .footer, .marketing, button {
+    background-color: #1f2937;
+    color: #E5E7EB;
+    font-size: 18px;
+}
+.textprimary {
+    color: #F9FAF8;
+    font-size: 48px;
+    font-weight: bolder;
+}
+.logo {
+    color: #F9FAF8;
+    font-size: 24px; 
+    font-weight: bold;
+}
+
+button, .marketing {
+    background-color:#3882F6;
+}
+
+.examples {
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: bolder;
+}
+.card  {
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.motto {
+    background-color: #E5E7EB;
+    color: #1f2937;
+    font-size: 36px;
+}
+
+.quote {
+    font-style: italic;
+}
+
+.author {
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------*/
+/* POSITIONING */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+}
+/*TBD*/
+ul { 
+    display: flex;
+    justify-content: space-evenly;   
+}
+
+.infocard {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+/*Forced the size of the child container #infocard*/
+    height: 100vh; 
+}
+.info{
+/*Took the left 50% of the child container #infocard */
+    flex: 0 0 50%; 
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------*/
+/* Visual Details*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+button {
+    border-radius: 12px;
+  }
+
