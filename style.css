@@ -25,7 +25,7 @@ button, .marketing {
     font-size: 36px;
     font-weight: bolder;
 }
-.card  {
+.case, .card  {
     font-size: 14px;
     font-weight: 100;
 }
@@ -47,11 +47,15 @@ button, .marketing {
 
 /* ----------------------------------------------------------------------------------------------------------------------*/
 /* POSITIONING */
+body {
+    margin: 0%;
+}
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 16px;
+    padding: 22px;
+    margin-left: 14%;
 }
 /*TBD*/
 ul { 
@@ -59,18 +63,67 @@ ul {
     justify-content: space-evenly;   
 }
 
+li {
+/*padding's full syntax is top right bottom left, here we use top right */
+    padding: 0px 20px; 
+}
+
 .infocard {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 /*Forced the size of the child container #infocard*/
-    height: 100vh; 
+    height: 86vh; 
+    margin: 22px;
+    margin-left: 14%;
 }
 .info{
 /*Took the left 50% of the child container #infocard */
     flex: 0 0 50%; 
+    
 }
 
+.examples {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60vh; 
+    margin: 12px;
+}
+
+.case {
+    margin: 16px;
+    
+}
+
+.motto {
+    display: flex;
+    height: 40vh;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10%;
+}
+
+.quote {
+    margin-left: 15%;
+}
+.author {
+/*Author to the right*/
+    margin-left: 60% ;
+}
+
+.marketing {
+    display: flex;
+    margin: 80px;
+    padding: 20px;
+}
+
+.footer{
+    display: flex;
+    height: 20vh;
+    align-items: center;
+    justify-content: center;
+}
 /* ----------------------------------------------------------------------------------------------------------------------*/
 /* Visual Details*/
 
@@ -81,6 +134,42 @@ ul {
   }
 
 button {
+    border: none;
     border-radius: 12px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 4px;
+    font-weight: bold;
+    width: 140px;
   }
+
+
+.container img{
+    border-radius: 25px;
+    float: left;
+    width:  460px;
+    height: 240px;
+    object-fit: cover;
+}
+
+.examples img {
+  border: 5px solid rgb(24, 68, 151);
+  border-radius: 25px;
+  float: left;
+  width:  200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.marketing {
+    border-radius: 12px;
+    height: 100px;
+}
+.marketing button {
+    border: 5px solid rgb(217, 223, 236);
+}
 
